@@ -1,0 +1,102 @@
+<!-- 
+ Name: Harrison Moore
+ Section: CS 290			Date: 1/18/2018
+ Objective: Create a website 
+ -->
+ <!DOCTYPE html>
+ <html>
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<h1>The Lord Of The Rings: Elves, Dwarfs, and Men</h1>
+ 		<link rel="stylesheet" href="graphics.css">
+ 		<!-- Image Log For Slideshow: ELF DWARF HUMAN-->
+ 		<script type="text/javascript">
+
+ 			var image1=new Image()
+ 			image1.src="https://vignette.wikia.nocookie.net/lotr/images/3/33/Legolas_-_in_Two_Towers.PNG/revision/latest?cb=20120916035151"
+
+ 			var image2=new Image()
+ 			image2.src="https://vignette.wikia.nocookie.net/lotr/images/e/ec/Gimli_-_FOTR.png/revision/latest?cb=20121008105956"
+
+ 			var image3=new Image()
+ 			image3.src="https://s-media-cache-ak0.pinimg.com/originals/27/78/b7/2778b7696e7986a9b4271036812a95a8.jpg"
+
+ 			var image4=new Image()
+ 			image4.src="http://cdn.playbuzz.com/cdn/3bf9851c-5ad0-4005-9171-90bc1858d3fc/d0e194dc-78bc-4a85-b92d-24564be815da_560_420.jpg"
+
+ 		</script>
+ 		<!-- End of Image Log: Tutorial Found at: https://www.youtube.com/watch?v=iOXHFvFpimg -->
+ 		<nav>
+ 			<ul>
+ 				<!-- DROPDOWN MENU -->
+					<div class="dropdown">
+					  <button onclick="myFunction()" class="dropbtn">Factions</button>
+					  <div id="myDropdown" class="dropdown-content">
+					  	<a href="mainPage.html">Main Page</a>
+					    <a href="elfPage.html">Elves</a>
+					    <a href="dwarfPage.html">Dwarfs</a>
+					    <a href="humanPage.html">Men</a>
+					  </div>
+					</div>
+					<p></p>
+				<!-- DROPDOWN MENU END: https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+ 	</head>
+ 	<body>
+ 	<!--	<img src="http://cdn.playbuzz.com/cdn/3bf9851c-5ad0-4005-9171-90bc1858d3fc/d0e194dc-78bc-4a85-b92d-24564be815da_560_420.jpg" alt="Middle Earth Map"> 
+
+ 		<p></p>
+ 	-->
+
+ 		<img src="https://vignette.wikia.nocookie.net/lotr/images/3/33/Legolas_-_in_Two_Towers.PNG/revision/latest?cb=20120916035151" name="slide" width="500" height="350">
+ 		<h2> Factions </h2>
+ 		<p> There are many so called 'Major Factions' which populate JRR Tolkins world of Lord of the Rings, many of which are not covered here. Rather than going over them all, the purpose of this website is to focus on the three major 'hero' races of Elves, Dwarfs, and Men. </p>
+ 		<h2> Hero Race </h2>
+ 		<p> A hero race is defined as a race which accompanies our main heros on their quest. A hero race which would fall under this category that are not covered here are Hobbits. If you are curious about where to find more information on <a href="http://lotr.wikia.com/wiki/Hobbits">hobbits</a>, please feel free to follow the following link. It will take you to a page which goes into the race more indepth. </p>
+ 		<h4> Elves </h4>
+ 		<p> Tall, nimble, and fair, the elves of Middle Earth are found in most enchanted forests. One of the most benounced being the forest of Mirkwood. These Mirkwood elves are known for their expert use of the bow and arrow. </p>
+ 		<h4> Dwarfs </h4>
+ 		<p> Short, stout, and quick to anger, the dwarfs of Middle Earth are found in most mountain rangers which scatter themselves over the surface of Middle Earth. Under each of these mountains, a different faction of dwarf resides. The one thing every dwarf has in common with one another, if it isn't blood or faction, it is their greed for gold. </p>
+ 		<h4> Men </h4>
+ 		<p> Brave, strong willed, yet desire power more than all else, the Humans of Middle Earth can be found almost anywhere in Middle Earth. Though they mostly stay to their major boarders of Gondor or Rohan, they can be scattered about in almost any villiage or town one may visit. Because they are scattered so much without any true singular homeland, most humans have a different set of skills depending on where they were raised. For example, the humans of Rohan tend to be the best horse riders in all of Middle Earth where as the humans of Mirkwood tend to make very skilled rangers. </p> 
+
+ 		<!-- Timer for Slideshow -->
+ 		<script type="text/javascript">
+ 			var step=1
+ 			function slideit() {
+ 				document.images.slide.src=eval("image"+step+".src")
+ 				if(step<4)
+ 					step++
+ 				else
+ 					step=1
+ 				setTimeout("slideit()",2500)
+ 			}
+ 			slideit()
+ 		</script>
+ 		<!-- End of Timer for Slideshow. Tutorial Found at: https://www.youtube.com/watch?v=iOXHFvFpimg -->
+ 		<!-- DROP DOWN MENU JAVA -->
+		 <script type="text/javascript">
+		 	/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+
+			    var dropdowns = document.getElementsByClassName("dropdown-content");
+			    var i;
+			    for (i = 0; i < dropdowns.length; i++) {
+			      var openDropdown = dropdowns[i];
+			      if (openDropdown.classList.contains('show')) {
+			        openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}
+		</script>
+		<!-- END OF DROPDOWN MENU: https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+
+ 	</body>
+ </html>

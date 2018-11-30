@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+ <html>
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<h1>The Lord Of The Rings: Elves, Dwarfs, and Men</h1>
+ 		<link rel="stylesheet" href="graphics.css">
+ 		<nav>
+ 			<ul>
+ 				<!-- DROPDOWN MENU -->
+					<div class="dropdown">
+					  <button onclick="myFunction()" class="dropbtn">Factions</button>
+					  <div id="myDropdown" class="dropdown-content">
+					  	<a href="mainPage.html">Main Page</a>
+					    <a href="elfPage.html">Elves</a>
+					    <a href="dwarfPage.html">Dwarfs</a>
+					    <a href="humanPage.html">Men</a>
+					  </div>
+					</div>
+					<p></p>
+				<!-- DROPDOWN MENU END: https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+ 	</head>
+ 	<body>
+ 		<h2> Dwarfs </h2>
+ 		<img src="https://vignette.wikia.nocookie.net/lotr/images/4/4d/SpecialMakeupFX-18.jpg/revision/latest?cb=20110227165855" width="628" height="326">
+ 		<h4> Major Locations </h4>
+ 		<div style="height:120px;width:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"> <!-- https://www.quackit.com/html/codes/html_scroll_box.cfm -->
+	 		<ul>
+			  <li><a href="http://lotr.wikia.com/wiki/Blue_Mountains">Blue Mountains </a></li>
+			  <li><a href="http://lotr.wikia.com/wiki/Iron_Hills">Iron Hills </a></li>
+			  <li><a href="http://lotr.wikia.com/wiki/Grey_Mountains">Grey Mountains </a></li>
+			  <li><a href="http://lotr.wikia.com/wiki/Lonely_Mountain">Lonely Mountain </a></li>
+			  <li><a href="http://lotr.wikia.com/wiki/Moria">Khazad-dum </a></li>
+			  <li><a href="http://lotr.wikia.com/wiki/Nogrod">Nogrod </a></li>
+			  <li><a href="http://lotr.wikia.com/wiki/Orocarni">Orcarni </a></li>
+			</ul>
+		</div>
+
+
+
+
+	<!-- DROP DOWN MENU JAVA -->
+		 <script type="text/javascript">
+		 	/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+
+			    var dropdowns = document.getElementsByClassName("dropdown-content");
+			    var i;
+			    for (i = 0; i < dropdowns.length; i++) {
+			      var openDropdown = dropdowns[i];
+			      if (openDropdown.classList.contains('show')) {
+			        openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}
+		</script>
+		<!-- END OF DROPDOWN MENU: https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+
+ 	</body>
+ </html>

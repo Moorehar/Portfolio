@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+ <html>
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<h1>The Lord Of The Rings: Elves, Dwarfs, and Men</h1>
+ 		<link rel="stylesheet" href="graphics.css">
+ 		<nav>
+ 			<ul>
+ 				<!-- DROPDOWN MENU -->
+					<div class="dropdown">
+					  <button onclick="myFunction()" class="dropbtn">Factions</button>
+					  <div id="myDropdown" class="dropdown-content">
+					  	<a href="mainPage.html">Main Page</a>
+					    <a href="elfPage.html">Elves</a>
+					    <a href="dwarfPage.html">Dwarfs</a>
+					    <a href="humanPage.html">Men</a>
+					  </div>
+					</div>
+					<p></p>
+				<!-- DROPDOWN MENU END: https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+ 	</head>
+ 	<body>
+ 		<h2> Elves </h2>
+ 		<img src="https://screenrant.com/wp-content/uploads/2017/10/Elves-Legolas-Arwen-Galadriel-Elrdon-Thandruil.jpg" width="700" height="350">
+ 		<h4> Major Locations </h4>
+ 		<ul>
+		  <li><a href="http://lotr.wikia.com/wiki/Rivendell">Mirkwood </a></li>
+		  <li><a href="http://lotr.wikia.com/wiki/Mirkwood">Rivendell </a></li>
+		</ul>
+
+		<h5> Rivendell </h5>
+		<p> Rivendell is described as being one of the major footholds of elves in Middle Earth. It is here where Elrdon, a high authority in Elf Society, resides and where many major events occur within the story of Middle Earth. It is here where the plan for the destruction of The One Ring was produced and where the journey began for The Fellowship of the Ring. </p>
+		<h5> Mirkwood </h5>
+		<p> Mirkwood is a forest which holds a major trade route used by elves on pilgrimage. But as time passed, and dark forces began to twist the forest, the elves and men who called it home were mostly driven north to the mountains. Thranduil, The King of the Woodland Realm, was the leader at this time. </p>
+
+
+
+
+	<!-- DROP DOWN MENU JAVA -->
+		 <script type="text/javascript">
+		 	/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+
+			    var dropdowns = document.getElementsByClassName("dropdown-content");
+			    var i;
+			    for (i = 0; i < dropdowns.length; i++) {
+			      var openDropdown = dropdowns[i];
+			      if (openDropdown.classList.contains('show')) {
+			        openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}
+		</script>
+		<!-- END OF DROPDOWN MENU: https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+
+ 	</body>
+ </html>
